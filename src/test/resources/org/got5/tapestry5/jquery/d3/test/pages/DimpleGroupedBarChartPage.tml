@@ -1,0 +1,27 @@
+<html 
+	t:type="layout"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+>
+
+	
+		<h1>Sample - dimple barChart component (css based on)</h1>
+		
+		<div 
+			t:clientId="myDiv"
+			t:type="d3-dimple/dimpleGroupedBarChart"
+			t:dataSet="data"
+			t:width="800"
+			t:height="400"
+		/>
+		
+	<h1>Source code</h1>
+	
+	<h3>Component JavaScript Code</h3>
+	<div t:type="jquery/showSource" t:ext="java" t:beginLine="3" t:endLine="33" t:path="main/resources/org/got5/tapestry5/jquery/d3/asset/components/dimpleBarChart.js"></div>
+	
+	<h3>Template Code</h3>
+	<div t:type="jquery/showSource" t:ext="html" t:beginLine="9" t:endLine="15" t:path="test/resources/org/got5/tapestry5/jquery/d3/test/pages/DimpleBarChartPage.tml"></div>
+	
+	<h3>Java Code</h3>
+	<div t:type="jquery/showSource" t:ext="java" t:beginLine="11" t:endLine="30" t:path="test/java/org/got5/tapestry5/jquery/d3/test/pages/DimpleBarChartPage.java"></div>		
+</html>	

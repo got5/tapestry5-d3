@@ -1,0 +1,96 @@
+<html 
+	t:type="layout"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+>
+
+	<h1> Short presentation </h1>
+	
+	<p>
+	The aim of this project is to integrate d3js with tapestry
+	through components.
+	Here are some very basic samples, but it can be improved easily.
+	The mecanism is the following:
+	</p>
+	
+	<ul>
+		<li>AbstractD3Component is the parent of any other component</li>
+		<li>AbstractD3Component import d3js.js and a default stylesheet</li>
+		<li>It also generate the div element in which graphics will be rendered</li>
+		<li>Custom components inherits from AbstractD3Component</li>
+		<li>They provide a dataset, some parameters (if any), as well as a new tapestry initializer which is responsible to generate graphics</li>
+	</ul>
+	
+	
+	<h1>Samples</h1>
+	
+	<p>
+	Here are basic samples (view below), but the mechanism described above allows to integrate
+	any other d3js component easily.
+	</p>
+	
+	<ul>
+		<li>
+			<a t:type="pageLink" page="barChartPage">Simple BarChart component</a>
+		</li>
+		<li>
+			<a t:type="pageLink" page="groupedBarChartPage">Grouped Bar chart component</a>
+		</li>
+		<li>
+			<a t:type="pageLink" page="pieChartPage">Pie chart component</a>
+		</li>
+		<li>Line Chart component</li>
+	</ul>
+
+	<h1>More</h1>
+	
+	<p>
+	The previous examples are based on d3js only. 
+	These components inherits from the higher parent component, 
+	and are so able to generateany d3 component, not only charts.
+	</p>
+	<p>
+	However, there are several interesting js libraries based on top of d3 and specialized in charts.
+	The problem is that actually, none of them contain all kinds of charts we would want, and especially the Pie Chart.
+	Here are the most interesting ones at this time:
+	</p>
+	<ul>
+		<li>
+		<a href="http://tenxer.github.io/xcharts/">xCharts</a>
+		</li>
+		<li>
+		<a href="http://dimplejs.org/">dimple</a>
+		</li>
+	</ul>
+	
+	
+	<h1>Dimple samples</h1>
+	
+	<p>
+	To create new dimple components, just inherit AbstractDimpleComponent.
+	The mechanism is exactly the same than inheriting of AbstractD3Component.
+	</p>
+	
+	
+	<ul>
+		<li>
+			<a t:type="pageLink" page="dimpleBarChartPage">Bar Chart component</a>
+		</li>
+		<li>
+			<a t:type="pageLink" page="dimpleGroupedBarChartPage">Grouped Bar Chart component</a>
+		</li>		
+	</ul>
+	
+	<h1>Some limitations</h1>
+	
+	<ul>
+		<li>
+			No native solution to print graphics/charts on the server side. For svg graphics, workarounds can be implemented on client side.
+		</li>
+		<li>
+			Works fine with opera, safari, chrome, firefox, but not with IE 8 (and lower).
+		</li>
+	</ul>	
+	
+	
+
+</html>

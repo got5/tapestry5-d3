@@ -1,0 +1,27 @@
+<html 
+	t:type="layout"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+>
+
+
+	<h1>Sample - grouped barChart component (svg based on)</h1>
+	
+	<div 
+		t:clientId="myDiv2"
+		t:type="jquery-d3/groupedBarChart"
+		t:dataSet="data"
+	/>
+	
+	<h1>Source code</h1>
+	
+	<h3>Component JavaScript Code</h3>
+	<div t:type="jquery/showSource" t:ext="java" t:beginLine="3" t:endLine="76" t:path="main/resources/org/got5/tapestry5/jquery/d3/asset/components/groupedBarChart.js"></div>
+	
+	<h3>Template Code</h3>
+	<div t:type="jquery/showSource" t:ext="html" t:beginLine="9" t:endLine="13" t:path="test/resources/org/got5/tapestry5/jquery/d3/test/pages/GroupedBarChartPage.tml"></div>
+	
+	<h3>Java Code</h3>
+	<div t:type="jquery/showSource" t:ext="java" t:beginLine="5" t:endLine="20" t:path="test/java/org/got5/tapestry5/jquery/d3/test/pages/GroupedBarChartPage.java"></div>		
+	
+
+</html>	
