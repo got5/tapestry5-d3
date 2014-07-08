@@ -1,4 +1,4 @@
-package org.got5.tapestry5.jquery.d3.components;
+package org.got5.tapestry5.jquery.d3.base;
 
 import org.apache.tapestry5.annotations.Import;
 import org.got5.tapestry5.jquery.d3.services.DimpleStack;
